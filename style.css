@@ -1,0 +1,364 @@
+/* variables */
+
+:root{
+    /* Primary colors */
+    --toamto: hsl(4, 100%, 67%);
+    /* Neutral colors */
+    --dark-slate-grey: hsl(234, 29%, 20%);
+    --Charcoal-Grey: hsl(235, 18%, 26%);
+    --Grey: hsl(231, 7%, 60%);
+    --White: hsl(0, 0%, 100%);
+    /* typography */
+    /* Body Copy */
+    --Font-size-paragraph: 16px;
+    /* Font */
+    --font-Family: 'Roboto', sans-serif;
+    --font-weights-mobile: 400;
+    --font-weight-desktop: 700;
+}
+
+/* global style */
+*,
+::after,
+::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--Charcoal-Grey);
+    height: 100vh;
+}
+
+.section-container{
+    background-color: var(--White);
+    display: flex;
+    width: 60%;
+    border-radius: 10px;
+    font-family: var(--font-Family);
+    font-weight: 700;
+}
+
+.content-container{
+    margin: auto;
+    padding: 0 0 0 5%;
+}
+
+#header{
+    margin-bottom: 10px;
+    font-size: 43px;
+    margin-bottom: 15px;
+}
+
+#paragraph{
+    font-size: var(--Font-size-paragraph);
+    margin-bottom: 15px;
+    font-weight: lighter;
+}
+
+.list-items{
+    margin-bottom: 10px;
+    list-style: none;
+    font-size: var(--Font-size-paragraph);
+    font-weight: lighter;
+}
+
+.list{
+    margin-bottom: 10px;
+}
+
+.li-icon{
+    width: 15px;
+}
+
+#body-img{
+    width: 17rem;
+    margin: 1rem;
+}
+
+.email{
+    font-size: 10px;
+}
+
+.error-message{
+    display: none;
+    font-size: 10px;
+    color: red;
+    font-weight: 5px;
+}
+
+.email-notice{
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.email-input{
+    width: 90%;
+    padding: 8px;
+    border-radius: 4px;
+    cursor: pointer;
+    border-width: 1.5px;
+}
+
+#submit-btn{
+    margin-top: 10px;
+    background-color: var(--dark-slate-grey);
+    border: none;
+    border-radius: 4px;
+    padding: 10px;
+    color: white;
+    width: 90%;
+    cursor: pointer;
+}
+
+#submit-btn:hover{
+background-color: var(--toamto);
+}
+
+#submit-btn:active{
+    background-color: var(--dark-slate-grey);
+}
+
+/* style for compatibility with different screen sizes */
+
+@media (max-width: 925px){
+    .section-container{
+        width: 86%;
+        font-size: 15px;
+    }
+}
+
+
+@media (max-width: 644px){
+    .section-container{
+        width: 94%;
+        font-size: 12px;
+    }
+    #header{
+        font-size: 25px;
+    }
+    #paragraph{
+        font-size: 16px;
+    }
+    #submit-btn{
+        width: 90%;
+        font-size: 11px;
+    }
+    
+    #body-img{
+    width: 12rem;
+    }
+    .email{
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 455px){
+    .section-container{
+        width: 98%;
+        font-size: 7px;
+    }
+    #header{
+        font-size: 19px;
+    }
+    #paragraph{
+        font-size: 7px;
+    }
+    .li-icon{
+        width: 10px;
+    }
+    #submit-btn{
+        width: 90%;
+        font-size: 7px;
+        padding: 5%;
+    }
+    
+    #body-img{
+    width: 10.5rem;
+    }
+    .email{
+        font-size: 6px;
+    }
+
+    .email-input{
+        padding: 2%;
+    }
+}
+
+
+/* style for mobile design */
+@media (max-width: 376px) {
+    .section-container{
+        display: flex;
+        flex-direction: column-reverse;
+        align-content: center;
+        width: 100%;
+        height: 100%;
+        border-radius: 0;
+        font-size: 13px;
+    }
+    #header{
+        font-size: 40px;
+    }
+    #paragraph{
+        font-size: 17px;
+    }
+    .li-icon{
+        width: 18px;
+    }
+
+    .list{
+        margin-bottom: 15px;
+        font-size: 17px;
+    }
+    .list-items{
+        margin-bottom: 30px;
+    }
+
+    #body-img{
+        width: 100%;
+        margin: 0;
+        }
+   
+    .email{
+        font-size: 13px;
+        font-weight: 700;
+    }
+    #submit-btn{
+        width: 100%;
+        font-size: 17px;
+        padding: 5%;
+        border-radius: 10px;
+        background-color: var(--dark-slate-grey);
+    }
+    .email-input{
+        padding: 4%;
+        margin: 10px 0 10px 0;
+        border-radius: 10px;
+        width: 100%;
+    }
+   
+}
+
+
+/* style for success screen */
+
+.sec-container{
+    background-color: var(--White);
+    width: 23%;
+    padding: 2rem;
+    border-radius: 20px;
+    font-family: var(--font-Family);
+}
+
+#success-img{
+    width: 40px;
+}
+
+#success-btn{
+    margin-top: 10px;
+    background-color: var(--dark-slate-grey);
+    border: none;
+    border-radius: 4px;
+    padding: 10px;
+    color: white;
+    width: 100%;
+    cursor: pointer;
+    font-size: 10px;
+}
+
+#success-btn:hover{
+    background-color: var(--toamto);
+    }
+    
+#success-btn:active{
+    background-color: var(--dark-slate-grey);
+    }
+
+#suc-header{
+    font-weight: 600;
+    font-size: 30px;
+    margin: 10px 0 10px 0;
+}
+
+.suc-paragraph{
+    font-size: 10px;
+    margin-bottom: 10px
+}
+
+#pers-email{
+  font-weight: 600;
+}
+
+/* style for compatibility with different screen sizes for success screen */
+
+@media (max-width: 925px){
+    .sec-container{
+        width: 28%;
+    }
+    #suc-header{
+        font-size: 25px;
+        margin: 10px 0 10px 0;
+    }  
+
+    #success-btn{
+        font-size: 9px;
+    }
+    .suc-paragraph{
+        font-size: 9px;
+    }
+}
+
+
+@media (max-width: 670px){
+    .sec-container{
+        width: 40%;
+    }
+}
+
+@media (max-width: 455px){
+    .sec-container{
+        width: 60%;
+    }
+}
+
+
+
+@media (max-width: 376px) {
+    .sec-container{
+        background-color: var(--White);
+        width: 100%;
+        height: 100%;
+        padding: 2rem;
+        border-radius: 0;
+    }
+    
+    #success-img{
+        width: 80px;
+        margin: 100px 0 30px 0;
+    }
+    
+    #success-btn{
+        background-color: var(--dark-slate-grey);
+        border-radius: 5px;
+        padding: 20px;
+        width: 100%;
+        font-size: 15px;
+    }
+    
+    #suc-header{
+        font-weight: 700;
+        font-size: 40px;
+        margin-bottom: 20px;
+    }
+    
+    .suc-paragraph{
+        font-size: 18px;
+        margin-bottom: 65%;
+    }
+} 

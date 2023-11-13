@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Newsletter sign-up form with success message</title>
+  <!-- fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <!-- style -->
+  <link rel="stylesheet" href="./style.css">
+  <!-- script -->
+  <script src="./index.js" defer></script>
+</head>
+
+<body>
+  <section class="section-container">
+    <div class="content-container">
+      <h1 id="header">Stay updated!</h1>
+      <p id="paragraph">Join 60,000+ product managers receiving monthly updates on:</p>
+      <ul class="list-items">
+        <li class="list"><img class="li-icon" src="./assets/images/icon-list.svg" alt="list icon"> Product discovery and
+          building what matters</li>
+        <li class="list"><img class="li-icon" src="./assets/images/icon-list.svg" alt="list icon"> Measuring to ensure
+          updates are a success</li>
+        <li class="list"> <img class="li-icon" src="./assets/images/icon-list.svg" alt="list icon"> And much more!</li>
+      </ul>
+      <span class="email-notice">
+        <label for="email" class="email">Email address</label>
+        <p class="error-message">Valid email required</p>
+      </span>
+        <input class="email-input" type="email" placeholder="email@company.com" name="email" required>
+        <button id="submit-btn" type="submit">Subscribe to monthly newsletter</button>
+    </div>
+    <img id="body-img" src="./assets/images/illustration-sign-up-desktop.svg" alt="" srcset="">
+
+  </section>
+</body>
+</html>
