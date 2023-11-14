@@ -12,7 +12,7 @@ const btn = document.getElementById('submit-btn');
 // change the body image of the web app on mobile devices and when the screen sizes are slowly reduced to mobile screen sizes and vice versa.
 
 window.addEventListener('resize', function(){
-    if (window.innerWidth < 375) {
+    if (window.innerWidth < 435) {
         bodyImage.src = "./assets/images/illustration-sign-up-mobile.svg";
     }else{
         bodyImage.src = "./assets/images/illustration-sign-up-desktop.svg";
@@ -20,7 +20,7 @@ window.addEventListener('resize', function(){
 });
 
 window.addEventListener('load', function(){
-    if (window.innerWidth < 375) {
+    if (window.innerWidth < 435) {
         bodyImage.src = "./assets/images/illustration-sign-up-mobile.svg";
     }else{
         bodyImage.src = "./assets/images/illustration-sign-up-desktop.svg";
