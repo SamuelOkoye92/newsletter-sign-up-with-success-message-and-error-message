@@ -192,7 +192,7 @@ background-color: var(--toamto);
 
 
 /* style for mobile design */
-@media (max-width: 400px) {
+@media (max-width: 376px) {
     .section-container{
         display: flex;
         flex-direction: column-reverse;
@@ -329,7 +329,7 @@ background-color: var(--toamto);
 
 
 
-@media (max-width: 400px) {
+@media (max-width: 376px) {
     .sec-container{
         background-color: var(--White);
         width: 100%;
